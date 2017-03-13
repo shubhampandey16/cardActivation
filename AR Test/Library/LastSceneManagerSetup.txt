@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/_scenes/AR_card_menus.unity
-  isLoaded: 1
-  isActive: 1
