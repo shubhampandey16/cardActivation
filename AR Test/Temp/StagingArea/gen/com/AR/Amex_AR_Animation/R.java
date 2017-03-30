@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.AR.Amex_AR;
+package com.AR.Amex_AR_Animation;
 
 public final class R {
     public static final class attr {

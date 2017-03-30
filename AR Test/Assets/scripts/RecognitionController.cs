@@ -36,6 +36,7 @@ ITrackableEventHandler
 		{
 			//GameObject.Find ("merchTrans1").GetComponent<merchTrans1Anim> ().TriggerAnimation ();
 			detected = true;
+
 			Debug.Log ("detected = " + detected);
 
 

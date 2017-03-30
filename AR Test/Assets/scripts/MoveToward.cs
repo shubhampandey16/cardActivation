@@ -23,7 +23,7 @@ public class MoveToward : MonoBehaviour {
 	void Update () {
 
 		if (GameObject.Find (cardObjectName).GetComponent<RecognitionController> ().detected == true) {
-			Debug.Log ("In MoveToward, detected = " + GameObject.Find ("card").GetComponent<RecognitionController> ().detected);
+			//Debug.Log ("In MoveToward, detected = " + GameObject.Find ("card").GetComponent<RecognitionController> ().detected);
 
 			if (time >= 0) {
 				time -= Time.deltaTime;
@@ -32,19 +32,13 @@ public class MoveToward : MonoBehaviour {
 				transform.position = Vector3.MoveTowards (transform.position, endPositionGO.position, speed * Time.deltaTime);
 			}
 		} else {
-			time = 2f;
+			time = 1.3f;
 			transform.position = new Vector3 (startX, startY, startZ);
 			delayFlag = false;
 			transform.localScale = new Vector3(0F, transform.localScale.y, transform.localScale.z);
-			Debug.Log ("In MoveToward, detected = " + GameObject.Find (cardObjectName).GetComponent<RecognitionController> ().detected);
+		//	Debug.Log ("In MoveToward, detected = " + GameObject.Find (cardObjectName).GetComponent<RecognitionController> ().detected);
 
 		}
 	}
 
-	IEnumerator Pause(float time)
-	{
-		yield return new WaitForSeconds(time);
-		transform.localScale = new Vector3(0.09302086F, transform.localScale.y, transform.localScale.z);
-		transform.position = Vector3.MoveTowards (transform.position, endPositionGO.position, speed * Time.deltaTime);
-	}
 }

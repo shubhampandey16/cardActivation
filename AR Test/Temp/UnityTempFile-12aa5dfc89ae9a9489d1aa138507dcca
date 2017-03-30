@@ -113,7 +113,9 @@ Assets/Vuforia/Scripts/WireframeBehaviour.cs
 Assets/Vuforia/Scripts/WireframeTrackableEventHandler.cs
 Assets/Vuforia/Scripts/WordBehaviour.cs
 Assets/scripts/AutoFocusSetup.cs
+Assets/scripts/BarGraphController.cs
 Assets/scripts/CanvasController.cs
+Assets/scripts/ColorSolid.cs
 Assets/scripts/ImageTargetPlayAudio.cs
 Assets/scripts/MerchController.cs
 Assets/scripts/MoveToward.cs
